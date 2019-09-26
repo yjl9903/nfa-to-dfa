@@ -1,0 +1,15 @@
+{
+  "name": "nfatodfa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js ./testdata/in.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "XLor",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.7.8"
+  }
+}
