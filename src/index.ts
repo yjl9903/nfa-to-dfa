@@ -1,7 +1,6 @@
 import fs from 'fs';
 import NFA from './nfa';
 import DFA from './dfa';
-import { Epsilon } from './common';
 
 console.log('Start changing NFA into DFA...\n');
 
