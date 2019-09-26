@@ -18,6 +18,12 @@ npm install -g typescript
 npm install .
 ```
 
+TypeScript 编译。
+
+```bash
+tsc
+```
+
 ## 使用
 
 读取 `testdata/in.txt`，并输出转化的 DFA。
