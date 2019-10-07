@@ -9,13 +9,13 @@
 全局安装 TypeScript。
 
 ```bash
-npm install -g typescript
+yarn global add typescript
 ```
 
 安装依赖。
 
 ```bash
-npm install .
+yarn
 ```
 
 TypeScript 编译。
@@ -29,7 +29,7 @@ tsc
 读取 `testdata/in.txt`，并输出转化的 DFA。
 
 ```bash
-npm run start
+yarn run start
 ```
 
 ### 输入格式说明
@@ -39,3 +39,5 @@ npm run start
 第二行有任意个字符串（用空格分割），表示 NFA 的终止结点。
 
 剩下的，每行有 3 个字符串 u v w（用空格分割），表示结点 u 连接一条字符为 w 的边向结点 v。
+
+输入文件忽略空行和 `//` 开头的行。

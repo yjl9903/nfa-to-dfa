@@ -120,6 +120,6 @@ export default class DFA {
         endpos += ` [${node.id}]`;
       }
     }
-    console.log(`\nEnd nodes:${endpos}`);
+    console.log(`\nEnd nodes:${endpos}\n`);
   }
 }

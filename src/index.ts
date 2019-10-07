@@ -5,7 +5,8 @@ import NFA from './nfa';
 import DFA from './dfa';
 
 if (process.argv.length <= 2) {
-  console.log('need param <file>');
+  console.log('Usage: nfatodfa <file>');
+  console.log('\n  Change the NFA from the file into a DFA');
   process.exit(0);
 }
 
@@ -15,6 +16,9 @@ const input = fs.readFileSync(process.argv[2], 'utf8').split('\r\n');
 
 let data: Array<string[]> = [];
 for (let s of input) {
+  let t = s.trim();
+  if (t === '') continue;
+  if (t.startsWith('//')) continue;
   data.push(s.split(' '));
 }
 
